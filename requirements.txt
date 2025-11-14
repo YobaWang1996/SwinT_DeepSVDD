@@ -1,0 +1,17 @@
+einops==0.8.1
+matplotlib==3.7.3
+numpy==1.25.0
+opencv_python==4.8.0.76
+pandas==2.0.3
+Pillow==9.4.0
+Pillow==12.0.0
+PyYAML==6.0.1
+PyYAML==6.0.3
+scikit_learn==1.7.2
+scipy==1.16.3
+skimage==0.0
+timm==1.0.22
+torch==1.12.0+cu102
+torchvision==0.13.0+cu102
+tqdm==4.65.0
+yacs==0.1.8
