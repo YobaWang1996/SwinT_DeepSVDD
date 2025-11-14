@@ -1,5 +1,5 @@
 # Model
-Implementation of [基于Transformer架构的端到端视频异常检测方法].
+Implementation of [An end-to-end video anomaly detection method based on Transformer architecture and Support Vector Data Description].
 
 ![model/model.png](model/model.png)
 
@@ -9,8 +9,8 @@ Implementation of [基于Transformer架构的端到端视频异常检测方法].
 - Create a conda virtual environment and activate it:
 
 ```bash
-conda create -n swin python=3.7 -y
-conda activate swin
+conda create -n vad python=3.7 -y
+conda activate vad
 ```
 
 - Install `CUDA==10.1` with `cudnn7` following
@@ -21,16 +21,10 @@ conda activate swin
 conda install pytorch==1.7.1 torchvision==0.8.2 cudatoolkit=10.1 -c pytorch
 ```
 
-- Install `timm==0.3.2`:
-
-```bash
-pip install timm==0.3.2
-```
-
 - Install other requirements:
 
 ```bash
-pip install opencv-python==4.4.0.60 termcolor==1.1.0 yacs==0.1.8
+pip install -r requirements.txt
 ```
 
 ### Data preparation
@@ -45,8 +39,9 @@ python main.py
 ```
 
 ## Acknowledgement:
-* Base Deep-SVDD code is borrowed from : https://github.com/lukasruff/Deep-SVDD-PyTorch
+* Base Deep-SVDD code is from : https://github.com/lukasruff/Deep-SVDD-PyTorch
 * Base ViViT Model is from : https://kgithub.com/rishikksh20/ViViT-pytorch
 * Base Swin Transformer Model is from : https://kgithub.com/microsoft/Swin-Transformer
 * Swin Transformer Pretrained Models on ImageNet
 [github](https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_tiny_patch4_window7_224.pth)
+
